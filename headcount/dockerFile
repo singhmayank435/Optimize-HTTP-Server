@@ -1,0 +1,12 @@
+FROM node:10-alpine
+
+
+WORKDIR /home/CODING/headcount/index
+
+COPY . . 
+
+RUN npm install
+
+EXPOSE  8083
+
+CMD [ "node" ,"index.js" ]
